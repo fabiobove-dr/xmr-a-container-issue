@@ -1,5 +1,5 @@
-# xmr_a_container_issue
-A repo that shows you why you should always look what's inside a Dockerfile, and never trust a docker-compose file.
+# A Container Issue - Hidden XMR Mining Process Case
+A repo that shows you why you should always look what's inside a Dockerfile, and never trust a docker-compose file or take for granted that any env variables actually works.
 <br>
 # The Issue
 Recently i got into Blockchain Development, it's an intresting topic, and to better understand how the concept of Prof of Work works i got over XMR, which is a crypto that can be mined with just a CPU.
