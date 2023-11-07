@@ -1,0 +1,16 @@
+version: '3'
+services:
+  app:
+    container_name: an_app
+    image: an_app
+    build:
+      context: ./
+      args:
+        - FAKE_ENV_VAR=${FAKE_ENV_VAR}_this_wont_work_and_the_address_will_not_be_changed
+        - WORKER_NAME=${WORKER_NAME}
+      dockerfile: ./dockerfiles/Dockerfile
+    volumes:
+      - ./config/config.json:/xmrig/build/config.json
+    command: /xmrig/start-xmrig.sh
+    env_file:
+      - ./environment/.env
