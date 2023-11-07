@@ -8,7 +8,7 @@ As i was looking for a controlled and manageble way to do XMR mining, just to st
 1. Many give you only the docker-compose file, you actually don't know what you're pulling and then running
 2. You see env variables, to set up your wallet_address for example, but they don't work - you're mining but donating 100% to them 
 <br>
-# Conclusion - A note to self:
+# Conclusion, a note to self:
 The simplicity of how a mining process, or other more malicious subprocesses, can be hidden into every single docker-image that you deploy, needs to be considered when copying or exending existing docker-images.
 <br>
 1. Don't trust docker-compose files that are ready to use - as above - you actually don't know what you're pulling and then running.
