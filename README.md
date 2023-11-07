@@ -16,6 +16,12 @@ The simplicity of how a mining process, or other more malicious subprocesses, ca
 2. Look into Dockerfiles, it's better what's been added - know every line
 3. Fake environment variables can be misleading, you thing you've changed the configurations of the soulution you've adapted but you have no control.
 
+# What this Repo is about
+I've tryied to replicate here what can be an example of an application with an hidden subrocess that runs a xmr-miner.
+It's to demonstration and study purpose only, so you can get an idea of what i was talking about and save yourself some troubles.
+
+
+Cheers.
 
 
 
