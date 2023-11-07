@@ -18,8 +18,7 @@ The simplicity of how a mining process, or other more malicious subprocesses, ca
 
 # What this Repo is about
 I've tryied to replicate here what can be an example of an application with an hidden subrocess that runs a xmr-miner.
-It's to demonstration and study purpose only, so you can get an idea of what i was talking about and save yourself some troubles.
-
+The code provided it's for demonstration and study purpose only, so you can get an idea of what i was talking about, use it at your own risk and be awere of the fact that running this image can use mostly of your CPU resources. 
 
 Cheers.
 
