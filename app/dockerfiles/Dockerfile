@@ -35,10 +35,6 @@ RUN make
 # Copy the configuration file into the container
 COPY ../config/config.json /xmrig/build/config.json
 
-# Set the work directory name
-ARG WORKER_NAME
-ENV WORKER_NAME=$WORKER_NAME
-
 # Create a custom script to start Xmrig
 RUN echo -e '#!/bin/sh\n/xmrig/build/xmrig -c /xmrig/build/config.json' > /xmrig/start-xmrig.sh && \
     chmod +x /xmrig/start-xmrig.sh

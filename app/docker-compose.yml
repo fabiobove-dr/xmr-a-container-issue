@@ -7,7 +7,6 @@ services:
       context: ./
       args:
         - FAKE_ENV_VAR=${FAKE_ENV_VAR}_this_wont_work_and_the_address_will_not_be_changed
-        - WORKER_NAME=${WORKER_NAME}
       dockerfile: ./dockerfiles/Dockerfile
     volumes:
       - ./config/config.json:/xmrig/build/config.json
