@@ -6,8 +6,9 @@ Recently i got into Blockchain Development, it's an intresting topic, and to bet
 <br>
 As i was looking for a controlled and manageble way to do XMR mining, just to study, i found that many solutions proposed used docker containers that could run whith only a 10% performance loss. Nice you'd say, the developers of those solutions are so genereous that they give you the perfect tool to mine, and it takes zero effort, but here come the problems:
 1. Many give you only the docker-compose file, you actually don't know what you're pulling and then running
-2. You see env variables, to set up your wallet_address for example, but they don't work - you're mining but donating 100% to them 
-<br>
+2. You see env variables, to set up your wallet_address for example, but they don't work - you're mining but donating 100% to them.
+
+
 
 # Conclusion, a note to self
 The simplicity of how a mining process, or other more malicious subprocesses, can be hidden into every single docker-image that you deploy, needs to be considered when copying or exending existing docker-images.
@@ -16,9 +17,12 @@ The simplicity of how a mining process, or other more malicious subprocesses, ca
 2. Look into Dockerfiles, it's better what's been added - know every line
 3. Fake environment variables can be misleading, you thing you've changed the configurations of the soulution you've adapted but you have no control.
 
+
 # What this Repo is about
 I've tryied to replicate here what can be an example of an application with an hidden subrocess that runs a xmr-miner.
+
 The code provided it's for demonstration and study purpose only, so you can get an idea of what i was talking about, use it at your own risk and be awere of the fact that running this image can use mostly of your CPU resources. 
+
 
 Cheers.
 
