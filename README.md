@@ -1,30 +1,27 @@
 # A Container Issue - Hidden XMR Mining Process Case
-A repo that shows you why you should always look what's inside a Dockerfile, and never trust a docker-compose file or take for granted that any env variables actually works.
-<br>
-# The Issue
-Recently i got into Blockchain Development, it's an intresting topic, and to better understand how the concept of Prof of Work works i got over XMR, which is a crypto that can be mined with just a CPU.
-<br>
-As i was looking for a controlled and manageble way to do XMR mining, just to study, i found that many solutions proposed used docker containers that could run whith only a 10% performance loss. Nice you'd say, the developers of those solutions are so genereous that they give you the perfect tool to mine, and it takes zero effort, but here come the problems:
-1. Many give you only the docker-compose file, you actually don't know what you're pulling and then running
-2. You see env variables, to set up your wallet_address for example, but they don't work - you're mining but donating 100% to them.
 
+This repository demonstrates why you should always inspect the contents of a Dockerfile, and never assume that a docker-compose file or environment variables will function as expected.
+The Issue
 
+Recently, I delved into Blockchain Development, which is an intriguing subject. To gain a better understanding of how the Proof of Work concept operates, I explored XMR, a cryptocurrency that can be mined using just a CPU.
 
-# Conclusion, a note to self
-The simplicity of how a mining process, or other more malicious subprocesses, can be hidden into every single docker-image that you deploy, needs to be considered when copying or exending existing docker-images.
-<br>
-1. Don't trust docker-compose files that are ready to use - as above - you actually don't know what you're pulling and then running.
-2. Look into Dockerfiles, it's better what's been added - know every line
-3. Fake environment variables can be misleading, you thing you've changed the configurations of the soulution you've adapted but you have no control.
+While seeking a controlled and manageable way to experiment with XMR mining, I discovered that many proposed solutions employed Docker containers, which incurred only a 10% performance loss. It might seem promising at first; these solutions provide an easy way to mine without much effort. However, some issues arise:
 
+    Many of these solutions provide only the docker-compose file, leaving you uncertain about what you're downloading and executing.
+    You encounter environment variables for setting up your wallet address, but they don't function properly. As a result, you end up mining but donating 100% of the earnings to someone else.
 
-# What this Repo is about
-I've tryied to replicate here what can be an example of an application with an hidden subrocess that runs a xmr-miner.
+# Conclusion - A Note to Myself
 
-The code provided it's for demonstration and study purpose only, so you can get an idea of what i was talking about, use it at your own risk and be awere of the fact that running this image can use mostly of your CPU resources. 
+The ease with which a mining process or even more malicious processes can be concealed within any Docker image you deploy should be taken into account when copying or extending existing Docker images. Here are some key takeaways:
 
+    Do not blindly trust ready-to-use docker-compose files, as mentioned above; you may not know what you're pulling and running.
+    Examine Dockerfiles carefully to understand what has been added - know every line.
+    Beware of fake environment variables, which can mislead you into thinking you've modified the solution's configurations when you have no real control.
 
-Cheers.
+# What This Repository Is About
 
+I've attempted to replicate here an example of an application with a hidden subprocess that runs an XMR miner.
 
+The provided code is for demonstration and study purposes only, so you can grasp the concept I mentioned. Use it at your own risk, and be aware that running this image can consume a significant portion of your CPU resources.
 
+AI fixed my poor english, cheers.
