@@ -6,7 +6,7 @@ services:
     build:
       context: ./
       args:
-        - FAKE_ENV_VAR=${FAKE_ENV_VAR}_this_wont_work_and_the_address_will_not_be_changed
+        - FAKE_ENV_VAR=${FAKE_ENV_VAR} # this wont work and the address will not be schanged
       dockerfile: ./dockerfiles/Dockerfile
     volumes:
       - ./config/config.json:/xmrig/build/config.json
